@@ -1,0 +1,29 @@
+// To use strings
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    // Defines four strings:
+    string prompt("What is your name:   "),
+           name,                // An empty
+           line(40, '-'),        // string with 40 '-'
+           total = "Hello ";
+
+    cout << prompt;                 // Request for input
+    getline(cin, name);             // Inputs a name in one line
+
+    total = total + name;           // Concatenates and assigns strings
+
+    cout << line << endl            // Outputs line and name
+         << total << endl;
+
+    cout << "Your name is "        // Outputs length of name
+         << name.length() << " characters long!" << endl;
+    cout << line << endl;
+
+    return 0;
+}
